@@ -72,7 +72,7 @@ export function Faqs() {
         height={946}
         unoptimized
       /> */}
-      <Container className="relative flex justify-between gap-x-16">
+      <Container className="relative lg:flex justify-between gap-x-16">
         <div className='w-full'>
           <Image
         className=""

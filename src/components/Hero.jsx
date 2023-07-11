@@ -21,9 +21,9 @@ export function Hero() {
 
   return (
   <>
-   <div className='bg-orange relative'>
+   <div className='bg-orange relative overflow-hidden max-w-screen'>
     <Image
-        className="absolute  top-0 max-w-none -translate-y-1/4  opacity-[46%]"
+        className="absolute   top-0 max-w-none -translate-y-1/4  opacity-[46%]"
 src="https://t4.ftcdn.net/jpg/02/03/12/77/360_F_203127775_xXXveDk1VCWzjGOxIMeJWAa7kLrVM8p9.jpg"        alt=""
         width={1450}
         height={800}

@@ -8,6 +8,9 @@ import logoStatamic from '@/images/logos/statamic.svg'
 import logoStaticKit from '@/images/logos/statickit.svg'
 import logoTransistor from '@/images/logos/transistor.svg'
 import logoTuple from '@/images/logos/tuple.svg'
+import logoQibBlack from '@/images/logos/qib-black.png'
+import bglogos from '@/images/background-logos.png'
+
 const logoMongodb = "https://1000logos.net/wp-content/uploads/2020/08/MongoDB-Logo.jpg"
 const logoReact = "https://repository-images.githubusercontent.com/37153337/9d0a6780-394a-11eb-9fd1-6296a684b124"
 const logoStripe = "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.svg/2560px-Stripe_Logo%2C_revised_2016.svg.png"
@@ -18,11 +21,21 @@ export function Hero() {
 
   return (
   <>
-   <div className='bg-orange'>
-     <Container className="pb-16 pt-20 text-center lg:pt-32 ">
+   <div className='bg-orange relative'>
+    <Image
+        className="absolute  top-0 max-w-none -translate-y-1/4  opacity-[46%]"
+src="https://t4.ftcdn.net/jpg/02/03/12/77/360_F_203127775_xXXveDk1VCWzjGOxIMeJWAa7kLrVM8p9.jpg"        alt=""
+        width={1450}
+        height={800}
+        unoptimized
+      />
+     
+   
+     <Container className="pb-16 pt-20 text-center lg:pt-32 relative ">
+     
       <h1 className="mx-auto max-w-4xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
       Transforms {' '}
-        <span className="relative whitespace-nowrap text-violet">
+        <span className="relative whitespace-nowrap text-[#addff8]">
           <svg
             aria-hidden="true"
             viewBox="0 0 418 42"
@@ -35,7 +48,7 @@ export function Hero() {
         </span>{' '}
         of Logistics
       </h1>
-      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-700">
+      <p className="mx-auto mt-6 max-w-2xl text-lg tracking-tight text-slate-900">
       Trust us to deliver reliability, speed, and exceptional customer service on the road to success.
       </p>
       <div className="mt-10 flex justify-center gap-x-6">
@@ -57,43 +70,15 @@ export function Hero() {
     </Container>
   
    </div>
-   <Container className="pb-16  text-center  ">
-    <div className="mt-32">
-        <p className="font-display text-base text-slate-900">
-          Our business partners
-        </p>
-        <ul
-          role="list"
-          className="mt-8 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0"
-        >
-          {[
-            [
-              { name: 'React', logo: logoReact },
-              { name: 'Stripe', logo: logoStripe },
-              { name: 'Nextjs', logo: logoNextjs },
-            ],
-            [
-              { name: 'Auth0', logo: logoAuth0 },
-              { name: 'MongoDB', logo: logoMongodb },
-              { name: 'AWS', logo: logoAws },
-            ],
-          ].map((group, groupIndex) => (
-            <li key={groupIndex}>
-              <ul
-                role="list"
-                className="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0"
-              >
-                {group.map((company) => (
-                  <li key={company.name} className="flex">
-                    <Image src={company.logo} alt={company.name} unoptimized width={100} height={20} />
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </div>
+   {/* <div className='bg-[#e2e2e2]'>
+   <Container >
+    <div className="py-16">
+    <Image src={bglogos} alt={"QIB"} unoptimized width={700} height={100} className='mx-auto'/>
+
+         </div>
                   </Container>
+   </div> */}
+  
   </>
   )
 }

@@ -189,7 +189,7 @@ function FeaturesDesktop() {
                   style={{ transform: `translateX(-${selectedIndex * 100}%)` }}
                   aria-hidden={featureIndex !== selectedIndex}
                 >
-                  <div className="w-[52.75rem] h-[30rem]  overflow-hidden rounded-xl bg-jungle shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
+                  <div className="w-[52.75rem] h-[24rem]  overflow-hidden rounded-xl bg-jungle shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
                     <Image
                       className="w-full"
                       src={feature.image}
@@ -215,7 +215,7 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32 bg-platinum"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-20 lg:pb-20 bg-platinum"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">

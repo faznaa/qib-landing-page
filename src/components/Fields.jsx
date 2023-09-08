@@ -24,7 +24,7 @@ export function TextField({
   return (
     <div className={className}>
       {label && <Label id={id}>{label}</Label>}
-      <input id={id} type={type} {...props} className={formClasses} />
+      {type == "textarea" ? <textarea id={id} type={type} {...props} className={formClasses} /> : <input id={id} type={type} {...props} className={formClasses} />}
     </div>
   )
 }

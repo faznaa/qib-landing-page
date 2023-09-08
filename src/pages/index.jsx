@@ -14,23 +14,23 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Build your dreams here</title>
+        <title>QIB Logistics</title>
         <meta
           name="description"
-          content="Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited."
+          content="Welcome to QIB Logistics (QuickCargo)! We specialize in helping Canada connect with the world through imports and exports. Explore our services and products to discover how we can meet your needs."
         />
       </Head>
       <Header />
       <main>
         <Hero />
-        <CallToAction />
+        {/* <CallToAction /> */}
 
         <PrimaryFeatures />
         <SecondaryFeatures />
         {/* <Pricing /> */}
 
-        <Testimonials />
-        <Faqs />
+        {/* <Testimonials />
+        <Faqs /> */}
       </main>
       <Footer />
     </>

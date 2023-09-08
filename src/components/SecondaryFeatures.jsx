@@ -11,9 +11,9 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 const features = [
   {
     name: 'QuickCargo',
-    summary: 'We ensure swift and efficient transportation of goods.',
+    summary: 'Sustainable Product Offerings',
     description:
-      'Our QuickCargo service ensures swift and efficient  transportation of goods, enabling businesses to meet their deadlines and gain a competitive edge',
+      ' QIB Logistics is committed to promoting eco-friendly practices by offering sustainable products like disposable bamboo plates. By importing and distributing such eco-conscious products, we actively contribute to reducing plastic waste and promoting sustainability in Canada.',
     image: "https://images.unsplash.com/photo-1616432043562-3671ea2e5242?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
     icon: function ReportingIcon() {
       let id = useId()
@@ -46,9 +46,9 @@ const features = [
   {
     name: 'Dispatching',
     summary:
-      'Optimizes routes and minimizes delay',
+      'Reduced Carbon Footprint',
     description:
-      'Our dispatching service optimizes routes and minimizes delays, ensuring that shipments are promptly dispatched to their intended destinations.',
+      'Our company prioritizes efficient and environmentally responsible logistics. We utilize modern transportation and warehousing practices to reduce our carbon footprint. ',
     image: "https://images.unsplash.com/photo-1501700493788-fa1a4fc9fe62?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1089&q=80",
     icon: function InventoryIcon() {
       return (
@@ -72,11 +72,11 @@ const features = [
     },
   },
   {
-    name: 'Documentation',
+    name: 'Eco-Aware Supply Chain',
     summary:
       'Worry about paperwork? Its our responsibility now!',
     description:
-      'We handle all necessary paperwork, permits, and customs documentation with precision and expertise, simplifying the documentation process for our clients.',
+      'QIB Logistics recognizes the importance of an eco-aware supply chain. We work closely with suppliers who share our commitment to sustainability, ensuring that our imports meet high environmental standards. ',
     image: "https://images.unsplash.com/photo-1473445730015-841f29a9490b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
     icon: function ContactsIcon() {
       return (
@@ -114,15 +114,15 @@ function Feature({ feature, isActive, className, ...props }) {
       </div>
       <h3
         className={clsx(
-          'mt-6 text-sm font-medium',
+          'mt-6 text-sm font-medium text-lg',
           isActive ? 'text-orange' : 'text-slate-600'
         )}
       >
         {feature.name}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
+      {/* <p className="mt-2 font-display text-xl text-slate-900">
         {feature.summary}
-      </p>
+      </p> */}
       <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
     </div>
   )
@@ -133,7 +133,7 @@ function FeaturesMobile() {
     <div className="-mx-4 mt-20 flex flex-col gap-y-10 overflow-hidden px-4 sm:-mx-6 sm:px-6 lg:hidden">
       {features.map((feature) => (
         <div key={feature.name}>
-          <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
+          <Feature feature={{...feature,name:feature.summary}} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
             <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
             <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
@@ -155,7 +155,7 @@ function FeaturesMobile() {
 
 function FeaturesDesktop() {
   return (
-    <Tab.Group as="div" className="hidden lg:mt-20 lg:block">
+    <Tab.Group as="div" className="hidden lg:mt-20 lg:block ">
       {({ selectedIndex }) => (
         <>
           <Tab.List className="grid grid-cols-3 gap-x-8">
@@ -167,7 +167,7 @@ function FeaturesDesktop() {
                   name: (
                     <Tab className="[&:not(:focus-visible)]:focus:outline-none">
                       <span className="absolute inset-0" />
-                      {feature.name}
+                      {feature.summary}
                     </Tab>
                   ),
                 }}
@@ -215,16 +215,15 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-20 lg:pb-20 bg-platinum"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-20 lg:pb-20 bg-platinum bg-gradient-to-br via-zinc-100 to-white from-white"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            What we offer
+            We are an Eco Friendly Business
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-            Because you’d probably be a little confused if we suggested you
-            complicate your everyday business tasks instead.
+          QIB Logistics: Nurturing Nature, One Import at a Time 🌿
           </p>
         </div>
         <FeaturesMobile />

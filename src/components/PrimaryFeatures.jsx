@@ -9,28 +9,123 @@ import screenshotAuth from '@/images/screenshots/auth.png'
 import screenshotPayment from '@/images/screenshots/payment.png'
 import screenshotResponsive from '@/images/screenshots/responsive.png'
 import screenshotLanding from '@/images/screenshots/landing.png'
+import Link from 'next/link'
+import ImportServices from './Services/import-services'
+import ExportServices from './Services/export-services'
+import WarehouseService from './Services/warehouse'
+import TruckServices from './Services/truck-services'
+import WhiteLabelling from './Services/white-labelling'
 
+const importProducts = [
+  {
+    name:"Egyptian Mangoes",
+    img:"https://i0.wp.com/post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/01/mangoes_what_to_know_1296x728_header-1024x575.jpg?w=1155&h=1528"
+  },
+  {
+    name:"Indian Spices",
+    img:"https://someindiangirl.com/wp-content/uploads/2020/01/780-2.jpg"
+  },
+  {
+    name:"Palm Leaf Plates",
+    img:"https://arbhuenterprises.com/wp-content/uploads/2022/06/eco-friendly-palm-leaf-plates.jpeg"
+  }
+]
+const exportProducts = [
+  {
+    name:"Olive oil",
+    img:"https://static-bebeautiful-in.unileverservices.com/1200/900/istockphoto-464433694-612x612_1.jpeg"
+  },
+  {
+    name:"Blueberries",
+    img:"https://d2jx2rerrg6sh3.cloudfront.net/images/Article_Images/ImageForArticle_22726_16560822540037952.jpg"
+  },
+  {
+    name:"Cherries",
+    img:"https://d2jx2rerrg6sh3.cloudfront.net/images/Article_Images/ImageForArticle_22726_16560822540037952.jpg"
+  },
+]
+const truck = [
+  {
+    name:"Dry Van Trucking",
+    img:"https://thejunctionllc.com/wp-content/uploads/2019/04/Dry-Van-Trucking-shipping.jpg",
+    description:"Transport your goods securely in our enclosed dry vans"
+  },
+  {
+    name:"Flatbed Trucking",
+    img:"https://www.pensketruckrental.com/media-library/penske-26-foot-flatbed-truck.jpg?id=31454443&width=600&height=600&quality=85&coordinates=0%2C0%2C0%2C0",
+    description:"Versatile flatbed solutions for oversized and specialized cargo."
+
+  },
+  {
+    name:"Frieght Forwarding",
+    img:"https://dnasupplychain.com/wp-content/uploads/2021/03/1.jpg",
+    description:"Seamlessly navigate global logistics with our expert forwarding services."
+
+  },
+  {
+    name:"Logistic services",
+    img:"https://blog.tatanexarc.com/wp-content/uploads/2023/01/What-are-logistics-services.jpg",
+    description:"Tailored logistics solutions to optimize your supply chain."
+
+  },
+  {
+    name:"Refrigerated Trucking",
+    img:"https://truckstop.com/wp-content/uploads/2021/02/blog-reefer-freight.jpg",
+    description:"Our refrigerated trucking keeps your perishables fresh and safe during transit."
+
+  },
+  {
+    name:"LTL Trucking",
+    img:"https://www.freightcenter.com/wp-content/webp-express/webp-images/uploads/2022/10/less-than-truckload-ltl-freight-shipping-infographic-1.jpg.webp",
+    description:"Efficient Less-Than-Truckload options for cost-effective shipping."
+
+  },
+ 
+]
 // Search Engine Optimization: "Want to climb to the top of search engine results? We'll be your website's personal trainer, flexing our SEO muscles to make sure your online presence gets fit, fabulous, and impossible to ignore."
 const features = [
   {
-    title: 'Import/Export Assistance',
+    title: 'Import Services',
+    url: '/import',
     description:
-      "Services Navigating the complexities of international trade is made easier with our Import/Export Assistance services. We provide comprehensive support, including documentation preparation, customs compliance, and logistics coordination, ensuring seamless movement of goods across borders.", 
-         image: "https://images.unsplash.com/photo-1565725001033-adccc84507e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80",
+      'Bringing international products to Canada has never been simpler. We handle all the paperwork and logistics, so you can enjoy the products you love from around the world.',
+    image:
+      'https://images.unsplash.com/photo-1565725001033-adccc84507e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+      child:<ImportServices importProducts={importProducts}/>
+  },
+  {
+    title: 'Export Services',
+    url: '/export',
+    description:"Let us help you take your Canadian products to global markets. We'll handle the shipping and export process, so you can focus on growing your business.",
+    child:<ExportServices exportProducts={exportProducts}/>
+
+  },
+  {
+    title: 'Truck',
+    url: '/truck',
+    description:"Experience reliable trucking services that deliver your goods on time, every time.",
+    child:<TruckServices truck={truck}/>
+
   },
   {
     title: 'Warehousing',
+    url: '/warehouse',
+    child:<WarehouseService />,
     description:
-      "With our state-of-the-art warehousing facilities, we offer secure storage solutions for your inventory. Our strategically located warehouses are equipped with advanced inventory management systems, ensuring efficient stock handling, organization, and retrieval.",
-    image: "https://images.unsplash.com/photo-1591419478162-a4dd21b7ec0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60",
+      'Store your goods securely with us. Our warehouses are equipped with modern facilities to keep your products safe and accessible.      ',
+    image:
+      'https://images.unsplash.com/photo-1591419478162-a4dd21b7ec0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60',
   },
   {
-    title: 'Distribution',
+    title: 'White Labelling',
+    url: '/white-label',
+
     description:
-      "Efficient distribution is crucial for businesses to reach their customers effectively. Our distribution services streamline the process, optimizing routes and employing robust tracking systems. We ensure your products are delivered accurately and on time, enhancing customer satisfaction and loyalty.",  
-        image: "https://images.unsplash.com/photo-1563242152-568e5de6f2b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80",
+      "Expand your reach in Canada with our white labeling service. We'll create a custom brand for your products, ensuring they meet Canadian standards.",
+    image:
+      'https://images.unsplash.com/photo-1563242152-568e5de6f2b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80',
+    child:<WhiteLabelling />
   },
- 
 ]
 
 export function PrimaryFeatures() {
@@ -50,12 +145,15 @@ export function PrimaryFeatures() {
       lgMediaQuery.removeEventListener('change', onMediaQueryChange)
     }
   }, [])
+  
 
   return (
     <section
-      id="features"
+      id="services"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-gradient-to-tr from-violet via-[#4d313a] to-orange t pb-28 pt-20 sm:py-32"
+      // className="relative overflow-hidden bg-violet t pb-28 pt-20 sm:py-32"
+
+      className="t relative overflow-hidden bg-gradient-to-tr from-violet via-[#4d313a] to-orange pb-28 pt-20 sm:py-32"
     >
       {/* <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -68,10 +166,11 @@ export function PrimaryFeatures() {
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
           <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-          Everything we offer to elevate your online presence.          </h2>
+            Our services{' '}
+          </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+            {/* Well everything you need if you aren’t that picky about minor
+            details like tax compliance. */}
           </p>
         </div>
         <Tab.Group
@@ -81,7 +180,7 @@ export function PrimaryFeatures() {
         >
           {({ selectedIndex }) => (
             <>
-              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-5">
+              <div className="-mx-4 flex overflow-x-auto pb-4 sm:mx-0 sm:overflow-visible sm:pb-0 lg:col-span-3">
                 <Tab.List className="relative z-10 flex gap-x-4 whitespace-nowrap px-4 sm:mx-auto sm:px-0 lg:mx-0 lg:block lg:gap-x-0 lg:gap-y-1 lg:whitespace-normal">
                   {features.map((feature, featureIndex) => (
                     <div
@@ -96,7 +195,7 @@ export function PrimaryFeatures() {
                       <h3>
                         <Tab
                           className={clsx(
-                            'font-display text-lg [&:not(:focus-visible)]:focus:outline-none',
+                            'font-display text-2xl [&:not(:focus-visible)]:focus:outline-none',
                             selectedIndex === featureIndex
                               ? 'text-blue-600 lg:text-white'
                               : 'text-blue-100 hover:text-white lg:text-white'
@@ -114,13 +213,13 @@ export function PrimaryFeatures() {
                             : 'text-blue-100 group-hover:text-white'
                         )}
                       >
-                        {feature.description}
+                        {selectedIndex === featureIndex && feature.description}
                       </p>
                     </div>
                   ))}
                 </Tab.List>
               </div>
-              <Tab.Panels className="lg:col-span-7">
+              <Tab.Panels className="lg:col-span-9">
                 {features.map((feature) => (
                   <Tab.Panel key={feature.title} unmount={false}>
                     <div className="relative sm:px-6 lg:hidden">
@@ -129,16 +228,16 @@ export function PrimaryFeatures() {
                         {feature.description}
                       </p>
                     </div>
-                    <div className="mt-10 w-[45rem] h-[40rem] overflow-hidden rounded-xl  shadow-xl shadow-blue-900/20 sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
-                      <Image
-                        className="w-full"
-                        src={feature.image}
-                        alt=""
-                        priority
-                        width={1000}
-                        height={600}
-                        sizes="(min-width: 1024px) 67.8125rem, (min-width: 640px) 100vw, 45rem"
-                      />
+                    {/* bg-gradient-to-r from-zinc-50 to-slate-400 */}
+                    <div className="mt-10 h-[40rem] overflow-scroll sm:w-[45rem] sm:overflow-hidden rounded-xl bg-jungle p-10  sm:w-auto lg:mt-0 lg:w-[67.8125rem]">
+                    <h3 className="font-display text-3xl tracking-tight text-zinc-300  sm:text-2xl md:text-3xl">
+    {feature.title}
+  </h3> 
+  {/* <p className=" max-w-3xl font-display tracking-tight mt-4 text-left text-base text-zinc-300">
+  {feature.description}
+
+  </p> */}
+                      {feature.child}
                     </div>
                   </Tab.Panel>
                 ))}

@@ -24,7 +24,9 @@ module.exports = {
         violet:'#1616f0',
         orange:'#FD8A01',
         platinum:'#E4E4E4',
-        jungle:'#232227'
+        jungle:'#232227',
+        gray:'#525252',
+        yellow:'#FFE7AB'
       },
       borderRadius: {
         '4xl': '2rem',

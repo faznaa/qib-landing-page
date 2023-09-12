@@ -15,7 +15,7 @@ const variantStyles = {
     blue: 'bg-blue-600 text-white hover:text-slate-100 hover:bg-blue-500 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600',
     white:
       'bg-white text-slate-900 hover:bg-blue-50 active:bg-blue-200 active:text-slate-600 focus-visible:outline-white',
-    orange: 'bg-orange text-white hover:text-slate-100 hover:bg-amber-700 active:bg-blue-800 active:text-blue-100 focus-visible:outline-black',
+    orange: 'bg-gradient-to-r from-orange to-gray-700 text-white hover:text-slate-100 hover:bg-amber-700 active:bg-blue-800 active:text-blue-100 focus-visible:outline-black',
     gradient: 'bg-orange text-white hover:text-slate-100 hover:bg-amber-700 active:bg-blue-800 active:text-blue-100 focus-visible:outline-blue-600',
 
     },

@@ -80,8 +80,8 @@ function MobileNavigation() {
           >
             <MobileNavLink href="#services">Services</MobileNavLink>
             <MobileNavLink href="/register">Contact Us</MobileNavLink>
-            {/* <MobileNavLink href="#pricing">Pricing</MobileNavLink>
-            <hr className="m-2 border-slate-300/40" />
+            <MobileNavLink href="/about">About Us</MobileNavLink>
+            {/* <hr className="m-2 border-slate-300/40" />
             <MobileNavLink href="/login">Sign in</MobileNavLink> */}
           </Popover.Panel>
         </Transition.Child>
@@ -96,13 +96,15 @@ export function Header() {
       <Container>
         <nav className="relative z-50 flex justify-between">
           <div className="flex items-center md:gap-x-12">
-            <Link href="#" aria-label="Home">
+            <Link href="/" aria-label="Home">
             <Image alt="logo" src={logoQibWhite} height={100} width={200} className="h-10 w-auto"/>
             </Link>
             <div className="hidden md:flex md:gap-x-6 text-slate-700">
-              <NavLink href="#services">Services</NavLink>
+              {/* <NavLink href="#services">Services</NavLink> */}
               <NavLink href="/register">Contact Us</NavLink>
-              {/* <NavLink href="#pricing">Pricing</NavLink> */}
+              <NavLink href="/about">About Us</NavLink>
+              <NavLink href="/blog">Blog</NavLink>
+
             </div>
           </div>
           <div className="flex items-center gap-x-5 md:gap-x-8">

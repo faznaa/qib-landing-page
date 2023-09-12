@@ -28,7 +28,13 @@ const importProducts = [
   {
     name:"Palm Leaf Plates",
     img:"https://arbhuenterprises.com/wp-content/uploads/2022/06/eco-friendly-palm-leaf-plates.jpeg"
-  }
+  },
+  {name:"Thyme",
+img:"http://www.choiceinternational.net/images/emi1.png"},
+{
+  name:"Jackfruit Chips",
+  img:"https://m.media-amazon.com/images/I/61JHFch8MVS.jpg"
+}
 ]
 const exportProducts = [
   {

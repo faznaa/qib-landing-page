@@ -9,7 +9,7 @@ export function GradientButton({
     ...props
   }) {
     className = clsx(
-      `relative inline-flex items-center justify-center p-0.5  overflow-hidden text-sm font-semibold text-black rounded-full group bg-gradient-to-br from-violet to-orange ${gradient ? "" : 'group-hover:from-white group-hover:to-white'}  focus:ring-8 hover:text-white focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800`,
+      `relative inline-flex items-center justify-center p-0.5  overflow-hidden text-sm font-semibold text-white rounded-full group bg-gradient-to-br from-violet to-orange ${gradient ? "" : 'group-hover:from-white group-hover:to-white'}  focus:ring-8 hover:text-white focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800`,
       className
     )
   

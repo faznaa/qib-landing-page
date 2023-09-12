@@ -115,7 +115,7 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium text-lg',
-          isActive ? 'text-orange' : 'text-slate-600'
+          isActive ? 'text-orange' : 'text-slate-300'
         )}
       >
         {feature.name}
@@ -123,7 +123,7 @@ function Feature({ feature, isActive, className, ...props }) {
       {/* <p className="mt-2 font-display text-xl text-slate-900">
         {feature.summary}
       </p> */}
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p className="mt-4 text-sm text-slate-300">{feature.description}</p>
     </div>
   )
 }
@@ -212,23 +212,36 @@ function FeaturesDesktop() {
 
 export function SecondaryFeatures() {
   return (
-    <section
+    <div
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-20 lg:pb-20 bg-platinum bg-gradient-to-br via-zinc-100 to-white from-white"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-20 lg:pb-20 bg-black relative overflow-hidden max-w-screen"
     >
-      <Container>
-        <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
+      {/* <div className='bg-black relative overflow-hidden max-w-screen'> */}
+    <Image
+      alt="Truck"
+        className="blur-lg absolute top-0 max-w-none bg-cover opacity-[0.35] "
+        // src="https://w0.peakpx.com/wallpaper/579/968/HD-wallpaper-dark-road-night.jpg"
+        // src="https://media2.giphy.com/media/7sE3k7bH5CK1a/giphy.gif?cid=ecf05e473jlb4sb5a4qjeu98go54rqr4xdbxla4c37t06bar&ep=v1_gifs_related&rid=giphy.gif&ct=g"
+src="https://wallpaper.dog/large/20506161.jpg"  
+        width={1600}
+        height={800}
+        unoptimized
+      />
+           {/* <Container className="pb-16 pt-20 text-center lg:pt-32 relative text-white "> */}
+
+      <Container className="relative text-white">
+        <div className="mx-auto max-w-2xl md:text-center opacity-1">
+          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl">
             We are an Eco Friendly Business
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          <p className="mt-4 text-lg tracking-tight text-slate-300">
           QIB Logistics: Nurturing Nature, One Import at a Time 🌿
           </p>
         </div>
         <FeaturesMobile />
         <FeaturesDesktop />
       </Container>
-    </section>
+    </div>
   )
 }

@@ -25,7 +25,7 @@ module.exports = {
         orange:'#FD8A01',
         platinum:'#E4E4E4',
         jungle:'#232227',
-        gray:'#525252',
+        grey:'#525252',
         yellow:'#FFE7AB'
       },
       borderRadius: {

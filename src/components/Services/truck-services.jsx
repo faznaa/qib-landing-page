@@ -21,7 +21,7 @@ export default function TruckServices({ truck }) {
       </h3> */}
       
       <div className="absolute inset-0 -z-10 bg-gradient-to-t from-zinc-900 via-zinc-900/40 " />
-        <div className="absolute inset-0 -z-10 rounded-full ring-1 ring-inset ring-zinc-900/10  " />
+        <div className="absolute inset-0 -z-10 rounded-md ring-1 ring-inset ring-zinc-900/10  " />
 
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-zinc-900 via-zinc-900/40 rounded-xl  transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
           <div className="absolute w-full flex mx-6">

@@ -1,6 +1,6 @@
-import  Footer  from "@/components/Footer"
+import  Footer  from "../components/Footer"
 import { Header } from "../components/Header"
-import { posts } from "@/components/constants"
+import { posts } from "../components/constants"
 
 export default function Blog() {
   return (

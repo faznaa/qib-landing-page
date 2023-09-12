@@ -1,6 +1,6 @@
 import Footer  from "../../components/Footer"
-import { Header } from "@/components/Header"
-import { posts } from "@/components/constants";
+import { Header } from "../../components/Header"
+import { posts } from "../../components/constants";
 import { useRouter } from "next/router"
 import { useState, useEffect } from "react";
 import ReactMarkdown from "react-markdown";

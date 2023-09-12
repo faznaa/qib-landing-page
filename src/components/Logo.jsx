@@ -1,4 +1,4 @@
-import logoQibBlack from '@/images/logos/qib-black.png'
+import logoQibBlack from '../images/logos/qib-black.png'
 import Image from 'next/image'
 
 export function Logo(props) {

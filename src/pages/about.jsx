@@ -10,8 +10,8 @@ import {
   SunIcon,
   UserGroupIcon,
 } from '@heroicons/react/20/solid'
-import { Header } from '@/components/Header'
-import Footer  from '@/components/Footer'
+import { Header } from '../components/Header'
+import Footer  from '../components/Footer'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -185,7 +185,7 @@ const footerNavigation = {
   ],
 }
 
-export default function About() {
+export function About() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (

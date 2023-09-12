@@ -2,12 +2,12 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import { Popover, Transition } from '@headlessui/react'
 import clsx from 'clsx'
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLink } from '@/components/NavLink'
+import { Button } from '../components/Button'
+import { Container } from '../components/Container'
+import { Logo } from '../components/Logo'
+import { NavLink } from '../components/NavLink'
 import Image from 'next/image'
-import logoQibWhite from '@/images/logos/qib-white.png';
+import logoQibWhite from '../images/logos/qib-white.png';
 
 function MobileNavLink({ href, children }) {
   return (
@@ -90,7 +90,7 @@ function MobileNavigation() {
   )
 }
 
-export function Header() {
+export  function Header() {
   return (
     <header className="py-10 bg-jungle">
       <Container>

@@ -1,10 +1,9 @@
 import Link from 'next/link'
 
-import { Container } from '@/components/Container'
-import { Logo } from '@/components/Logo'
-import { NavLink } from '@/components/NavLink'
+import { Container } from '../components/Container'
+import { NavLink } from '../components/NavLink'
 import Image from 'next/image'
-import logoQibWhite from '@/images/logos/qib-white.png';
+import logoQibWhite from '../images/logos/qib-white.png';
 
 
 export default function Footer() {

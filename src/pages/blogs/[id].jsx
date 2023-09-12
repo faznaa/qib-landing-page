@@ -1,4 +1,4 @@
-import { Footer } from "@/components/Footer"
+import Footer  from "../../components/Footer"
 import { Header } from "@/components/Header"
 import { posts } from "@/components/constants";
 import { useRouter } from "next/router"

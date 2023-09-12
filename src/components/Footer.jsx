@@ -7,7 +7,7 @@ import Image from 'next/image'
 import logoQibWhite from '@/images/logos/qib-white.png';
 
 
-export function Footer() {
+export default function Footer() {
   return (
     <footer className="bg-jungle">
       <Container>

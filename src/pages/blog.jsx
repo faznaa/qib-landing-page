@@ -1,8 +1,8 @@
-import { Footer } from "@/components/Footer"
-import { Header } from "@/components/Header"
+import  Footer  from "@/components/Footer"
+import { Header } from "../components/Header"
 import { posts } from "@/components/constants"
 
-export default function Example() {
+export default function Blog() {
   return (
     <div>
         <Header />

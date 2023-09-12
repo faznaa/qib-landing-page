@@ -185,7 +185,7 @@ const footerNavigation = {
   ],
 }
 
-export function About() {
+export default function About() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (

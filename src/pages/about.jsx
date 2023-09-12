@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -245,7 +244,7 @@ export default function Example() {
                 At QIB Logistics, we prioritize customer satisfaction. Our tailored solutions and guidance support you throughout the import process. Let us handle the logistics, while you focus on your strengths.
                 </p>
                 <p className="mt-8">
-                Contact QIB Logistics today, and together, we'll unlock new growth opportunities for your brand.
+                Contact QIB Logistics today, and together, we`ll unlock new growth opportunities for your brand.
                 </p>
               </div>
             </div>

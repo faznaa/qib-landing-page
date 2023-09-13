@@ -95,7 +95,7 @@ export default function Blog() {
                     />
                   ),
                   h4: ({ node, ...props }) => (
-                    <h4 className="text-f1 text-[20px] text-gray-300 pt-4" {...props} />
+                    <h4 className="text-f1  text-[20px] text-gray-200 pt-4" {...props} />
                   ),
                   // Map `h1` (`# heading`) to use `h2`s.
                   // Rewrite `em`s (`*like so*`) to `i` with a red foreground color.

@@ -11,7 +11,7 @@ import {
   UserGroupIcon,
 } from '@heroicons/react/20/solid'
 import { Header } from '../components/Header'
-import Footer  from '../components/Footer'
+import Footer from '../components/Footer'
 
 const navigation = [
   { name: 'Product', href: '#' },
@@ -186,8 +186,6 @@ const footerNavigation = {
 }
 
 export default function About() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
-
   return (
     <div className="bg-zinc-900">
       {/* Header */}
@@ -215,8 +213,7 @@ export default function About() {
               About Us
             </h2>
             <p className="mt-6 text-lg leading-8 text-gray-300">
-            Discover Our Journey of Connecting Canada to the World.
-
+              Discover Our Journey of Connecting Canada to the World.
             </p>
           </div>
         </div>
@@ -241,14 +238,17 @@ export default function About() {
               </div>
               <div>
                 <p>
-                At QIB Logistics, we prioritize customer satisfaction. Our tailored solutions and guidance support you throughout the import process. Let us handle the logistics, while you focus on your strengths.
+                  At QIB Logistics, we prioritize customer satisfaction. Our
+                  tailored solutions and guidance support you throughout the
+                  import process. Let us handle the logistics, while you focus
+                  on your strengths.
                 </p>
                 <p className="mt-8">
-                Contact QIB Logistics today, and together, we`ll unlock new growth opportunities for your brand.
+                  Contact QIB Logistics today, and together, we`ll unlock new
+                  growth opportunities for your brand.
                 </p>
               </div>
             </div>
-        
           </div>
         </div>
 
@@ -262,33 +262,55 @@ export default function About() {
         </div>
 
         {/* Values section */}
-        {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+        <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-              Our values
+              Our Mission
             </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-300">
-              Discover Our Journey of Connecting Canada to the World.
-            </p>
           </div>
           <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
-            {values.map((value) => (
-              <div key={value.name} className="relative pl-9">
-                <dt className="inline font-semibold text-white">
-                  <value.icon
-                    className="absolute left-1 top-1 h-5 w-5 text-indigo-500"
-                    aria-hidden="true"
-                  />
-                  {value.name}
-                </dt>{' '}
-                <dd className="inline">{value.description}</dd>
-              </div>
-            ))}
+            <p className="mt-6 leading-8 text-gray-300">
+              At QIB Logistics, our mission is to serve as a trusted bridge
+              connecting North America with the world, facilitating seamless
+              import and export solutions. We are committed to delivering
+              value-driven, eco-friendly, and innovative services that empower
+              businesses to expand their horizons while adhering to the highest
+              standards of quality, integrity, and customer satisfaction.
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt=""
+              className="aspect-[9/4] w-full object-cover xl:rounded-3xl"
+            />
           </dl>
-        </div> */}
+        </div>
 
-        {/* Team section */}
+        {/* Values section */}
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0 ">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+              Our Vision
+            </h2>
+          </div>
+          <dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-8 text-base leading-7 text-gray-300 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:gap-x-16">
+            <p className="mt-6 leading-8 text-gray-300">
+              Our vision at QIB Logistics is to be the leading force in global
+              trade facilitation, recognized for our unwavering dedication to
+              sustainability and excellence. We aim to continually innovate and
+              expand our services, fostering strong partnerships and
+              relationships worldwide. We envision a world where businesses
+              effortlessly access international markets, contributing to
+              economic growth while respecting the environment.{' '}
+            </p>
+            <img
+              src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+              alt=""
+              className="aspect-[9/4] w-full object-cover xl:rounded-3xl"
+            />
+          </dl>
+        </div>
+        {/* Team section */}
+        {/* <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
           <div className="mx-auto max-w-2xl lg:mx-0">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Our team
@@ -321,10 +343,9 @@ export default function About() {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
 
-        {/* CTA section */}
-     
+
       </main>
 
       {/* Footer */}

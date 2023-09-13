@@ -25,7 +25,7 @@ export function Hero() {
    <div className='bg-black relative overflow-hidden max-w-screen'>
     <Image
       alt="Truck"
-        className="absolute   top-0 max-w-none -translate-y-1/4 opacity-[0.55] "
+        className="absolute blur-sm  top-0 max-w-none -translate-y-1/4 opacity-[0.55] "
         // src="https://w0.peakpx.com/wallpaper/579/968/HD-wallpaper-dark-road-night.jpg"
         // src="https://media2.giphy.com/media/7sE3k7bH5CK1a/giphy.gif?cid=ecf05e473jlb4sb5a4qjeu98go54rqr4xdbxla4c37t06bar&ep=v1_gifs_related&rid=giphy.gif&ct=g"
 src="https://media1.giphy.com/media/UVTMFrWQBsRyctpP0R/giphy.gif?cid=ecf05e47vxj2hi1123vc0h3xyj3uklfwyed5psyrdeyow6fk&ep=v1_gifs_search&rid=giphy.gif&ct=g"  

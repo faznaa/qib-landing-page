@@ -53,6 +53,11 @@ const products = [
     description:
       'Experience the creamy goodness of coconut milk in a convenient powder form, perfect for adding a luscious coconut flavor to a variety of dishes.',
   },
+  {
+    "title": "Coconut Sugar",
+    images:['https://origin.club/media/catalog/product/cache/86eaafd287624d270d87c663dd3976d5/c/o/coconut_sugar_2__1.jpg'],
+    "description": "Discover the natural sweetness of coconut sugar, a wholesome alternative to traditional sweeteners. It adds a delightful caramel-like flavor to your favorite recipes and beverages."
+  }
 ]
 
 export default function Products() {

@@ -139,13 +139,13 @@ export const posts = [
       description:
         'QIB Logistics streamlines global trade with our Import & Export services, ensuring your goods move seamlessly across borders, connecting you to new markets worldwide.',
       image:
-        'https://img.freepik.com/free-vector/import-export-infographic-hand-drawn_23-2149165167.jpg?w=2000',
+        'https://www.legalwiz.in/wp-content/uploads/How-to-start-import-export-business-in-india.jpg',
         child:<ImportServices importProducts={importProducts}/>
     },
     {
       title: 'Brokerage',
       url: 'brokerage',
-      image:'https://www.rismedia.com/wp-content/uploads/2023/02/WAV_Group_pg134_1295151953-750x499.jpg',
+      image:'https://assets.entrepreneur.com/content/3x2/2000/20190617160341-GettyImages-804263444.jpeg',
       description:" We specialize in simplifying the complexities of cross-border trade, ensuring your goods move seamlessly and compliantly across borders.",
       child:<ExportServices exportProducts={exportProducts}/>
   

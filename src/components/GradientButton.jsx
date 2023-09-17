@@ -14,9 +14,9 @@ export function GradientButton({
     )
   
     return href ? (
-      <Link href={href} className={className}  ><span className={`relative py-2 px-4 transition-all ease-in duration-75 ${gradient ? "text-white" : "bg-white"}  dark:bg-gray-900 rounded-full group-hover:bg-opacity-0`} {...props} /></Link>
+      <Link href={href} className={className}  ><span className={`relative py-2 px-4 transition-all ease-in duration-75 ${gradient ? "text-white" : "bg-white text-black"}   rounded-full group-hover:bg-opacity-0`} {...props} /></Link>
     ) : (
-      <button className={className}><span className={`relative px-2 py-5 transition-all ease-in duration-75 ${gradient ? "text-white" : "bg-white"} dark:bg-gray-900 rounded-full group-hover:bg-opacity-0`} {...props} /></button>
+      <button className={className}><span className={`relative px-2 py-5 transition-all ease-in duration-75 ${gradient ? "text-white" : "bg-white text-black"}  rounded-full group-hover:bg-opacity-0`} {...props} /></button>
     )
   }
 

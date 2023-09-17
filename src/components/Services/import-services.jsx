@@ -1,6 +1,11 @@
 import React from 'react'
+import jackfruit from '../../images/jackfruit.jpeg'
+import coconut from '../../images/tender.jpeg'
+import Image from 'next/image'
+import { GradientButton } from '../GradientButton'
 const Heading = ({ children }) => <h1 className="text-lg font-semibold tracking-tight text-gray-300 sm:text-xl">{children}</h1>
 const Paragraph = ({children}) => <p className='my-3 text-md leading-7 tracking-tight text-gray-400'>{children}</p>
+
 export default function ImportServices({ importProducts }) {
   return (
     <>
@@ -9,7 +14,11 @@ export default function ImportServices({ importProducts }) {
     <Paragraph>Our import services encompass a wide range of capabilities. We have a vast network of suppliers and partners across the globe, allowing us to source products from various regions and industries. This extensive reach enables us to find the right products for your needs, whether it&quot;s fresh produce from South Asia or specialty items from the Middle East.</Paragraph>
     <Paragraph>One of the critical aspects of successful imports is navigating customs compliance. Our experienced team of customs experts ensures that your imports meet all regulatory requirements, minimizing delays and complications. We handle the paperwork, ensuring that all necessary permits, licenses, and certificates are in order. Our focus is on making the customs clearance process as smooth and efficient as possible.
 </Paragraph>
+<div className='flex justify-between items-center'>
 <Paragraph>Some of our products are: </Paragraph>
+<GradientButton href="/products">See more</GradientButton>
+
+</div>
 <ul
     role="list"
     className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-4 sm:grid-cols-2 lg:mx-0 lg:max-w-4xl  lg:grid-cols-3"
@@ -43,6 +52,26 @@ export default function ImportServices({ importProducts }) {
       />
       <Paragraph>Rebranding, also known as whitelabelling, is a strategic practice employed by businesses to offer products or services under their own brand, even though those products are manufactured or provided by another company. This process involves creating a new brand identity, packaging, and labeling that align with the marketing and branding guidelines of the rebranding company.</Paragraph>
       <Paragraph>At QIB Logistics, we specialize in rebranding services, helping businesses introduce products to new markets and extend their product lines without the need for in-house manufacturing. Whether you have raw products from international suppliers or wish to diversify your product offerings, our expertise in rebranding allows you to present these products as your own, ensuring a seamless and successful market entry. With a focus on quality, compliance, and customer satisfaction, we empower businesses to leverage the potential of rebranding, fostering growth and expansion in their target markets.</Paragraph>
+      <Paragraph>Some of our rebrandings: </Paragraph>
+      <div className='block sm:flex gap-4 '>
+      <div><Image
+        className="aspect-[3/2] max-w-sm rounded-2xl object-cover"
+        src={jackfruit}
+        alt="Jackfruit"
+      />
+      <h3 className="text-zinc-400 mt-6 text-lg font-semibold leading-8 tracking-tight">
+        Jackfruits chips from India
+      </h3></div>
+      <div>
+      <Image
+        className="aspect-[3/2] max-w-sm rounded-2xl object-cover"
+        src={coconut}
+        alt="cocunut"
+      />
+      <h3 className="text-zinc-400 mt-6 text-lg font-semibold leading-8 tracking-tight">
+        Tender Coconut 
+      </h3></div>
+      </div>
     </div>
   {/* <p className='text-black my-4 font-semibold text-lg'>Some of our imports</p> */}
  </>

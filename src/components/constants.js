@@ -134,25 +134,25 @@ export const posts = [
   // Search Engine Optimization: "Want to climb to the top of search engine results? We'll be your website's personal trainer, flexing our SEO muscles to make sure your online presence gets fit, fabulous, and impossible to ignore."
   export const features = [
     {
-      title: 'Import Services',
-      url: 'import',
+      title: 'Import & Export Services',
+      url: 'import-and-export',
       description:
-        'Bringing international products to Canada has never been simpler. We handle all the paperwork and logistics, so you can enjoy the products you love from around the world.',
+        'QIB Logistics streamlines global trade with our Import & Export services, ensuring your goods move seamlessly across borders, connecting you to new markets worldwide.',
       image:
-        'https://images.unsplash.com/photo-1565725001033-adccc84507e0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80',
+        'https://img.freepik.com/free-vector/import-export-infographic-hand-drawn_23-2149165167.jpg?w=2000',
         child:<ImportServices importProducts={importProducts}/>
     },
     {
-      title: 'Export Services',
-      url: 'export',
-      image:'https://static-bebeautiful-in.unileverservices.com/1200/900/istockphoto-464433694-612x612_1.jpeg',
-      description:"Let us help you take your Canadian products to global markets. We'll handle the shipping and export process, so you can focus on growing your business.",
+      title: 'Brokerage',
+      url: 'brokerage',
+      image:'https://www.rismedia.com/wp-content/uploads/2023/02/WAV_Group_pg134_1295151953-750x499.jpg',
+      description:" We specialize in simplifying the complexities of cross-border trade, ensuring your goods move seamlessly and compliantly across borders.",
       child:<ExportServices exportProducts={exportProducts}/>
   
     },
     {
-      title: 'Truck',
-      url: 'truck',
+      title: 'Transportation',
+      url: 'transportation',
       image:"https://thejunctionllc.com/wp-content/uploads/2019/04/Dry-Van-Trucking-shipping.jpg",
       description:"Experience reliable trucking services that deliver your goods on time, every time.",
       child:<TruckServices truck={truck}/>
@@ -165,16 +165,15 @@ export const posts = [
       description:
         'Store your goods securely with us. Our warehouses are equipped with modern facilities to keep your products safe and accessible.      ',
       image:
-        'https://images.unsplash.com/photo-1591419478162-a4dd21b7ec0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHRydWNrfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60',
-    },
-    {
-      title: 'White Labelling',
-      url: 'white-label',
-  
-      description:
-        "Expand your reach in Canada with our white labeling service. We'll create a custom brand for your products, ensuring they meet Canadian standards.",
-      image:
-        'https://images.unsplash.com/photo-1563242152-568e5de6f2b8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80',
-      child:<WhiteLabelling />
-    },
+        'https://media.freshbooks.com/wp-content/uploads/2022/01/what-is-a-warehouse.jpg',
+    }
   ]
+
+  export const brokerageServices = [
+    {text:"Customs Expertise",description:"Our experienced team of customs brokers is well-versed in the intricate details of customs procedures, ensuring your shipments comply with all regulations. We handle the paperwork, duties, and taxes, so you don't have to worry about the complexities of customs clearance."},
+    {text:"Compliance Assurance",description:"We keep abreast of the latest changes in trade regulations to ensure your shipments are always in compliance. With our in-depth knowledge, we help you avoid costly delays or penalties."},
+    {text:"Efficiency",description:"Time is of the essence in international trade. Our brokerage service streamlines the clearance process, reducing delays and ensuring your goods reach their destination swiftly."},
+    {text:"Transparency",description:"We believe in transparent communication. Throughout the clearance process, we keep you informed, providing updates and addressing any questions or concerns you may have."},
+    {text:"Cost Savings",description:"By leveraging our expertise, you can potentially reduce costs associated with customs duties and taxes. We help you maximize duty exemptions and ensure efficient use of your resources."},
+  ]
+  // "Expand your reach in Canada with our white labeling service. We'll create a custom brand for your products, ensuring they meet Canadian standards.",

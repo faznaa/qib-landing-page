@@ -1,8 +1,12 @@
 import React from 'react'
+const Paragraph = ({children}) => <p className='my-3 text-md leading-6 tracking-tight text-gray-400'>{children}</p>
 
 export default function TruckServices({ truck }) {
   return (
     <>
+    <Paragraph>    QIB Logistics offers comprehensive transportation services, with a primary focus on trucking solutions that ensure the efficient movement of your goods. Our fleet of trucks is equipped to handle various cargo types, from perishable products like fruits and vegetables to non-perishable items. With a commitment to reliability and timely deliveries, we optimize transportation routes and employ experienced drivers to ensure your products reach their destination swiftly and in optimal condition. Whether you require short-haul or long-haul transportation, you can trust QIB Logistics to provide dependable and cost-effective trucking services that meet your specific needs while ensuring the smooth flow of your supply chain.
+</Paragraph>
+<Paragraph>Some of the trucks we offer: </Paragraph>
   {/* <p className='text-black my-4 font-semibold text-lg'>Some of our imports</p> */}
   <ul
     role="list"
@@ -11,7 +15,7 @@ export default function TruckServices({ truck }) {
     
    {truck.map((prod) =>  <li key={prod?.name} className='group relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-zinc-900 px-8 pb-8 pt-32 lg:pt-48 '>
       <img
-        className="absolute inset-0 -z-10 h-full w-full object-cover transform duration-700 backdrop-opacity-100 aspect-[3/2]"
+        className="absolute inset-0 -z-10 h-full w-full object-cover transform duration-700 backdrop-opacity-100 aspect-1 sm:aspect-[3/2]"
 
         src={prod.img}
         alt={prod.name}
@@ -26,7 +30,7 @@ export default function TruckServices({ truck }) {
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-zinc-900 via-zinc-900/40 rounded-xl  transform duration-500 inset-y-3/4 group-hover:-inset-y-0">
           <div className="absolute w-full flex mx-6">
             <div>
-              <h3 className="mt-3 text-lg font-semibold leading-6 text-white">
+              <h3 className="mt-3 text-md sm:text-lg font-semibold leading-6 text-white">
                 <span className="absolute inset-0" />
                 {prod.name}
               </h3>
@@ -37,7 +41,7 @@ export default function TruckServices({ truck }) {
             </div>{" "}
           </div>
           <div className="absolute w-full flex place-content-center mt-20">
-            <p className="font-sans text-left text-white mt-6 mx-6">
+            <p className="font-sans text-sm sm:text-md text-left text-white mt-1 sm:mt-6 mx-6">
               {prod?.description}
             </p>
           </div>

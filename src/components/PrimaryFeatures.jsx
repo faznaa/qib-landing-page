@@ -59,17 +59,17 @@ export function PrimaryFeatures() {
             details like tax compliance. */}
           </p>
         </div>
-      <div className='grid grid-cols-3 gap-y-4'>
-      {features?.map(i => <div key={i.title} className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className='grid grid-cols-1 sm:grid-cols-2 gap-y-4 sm:gap-y-10'>
+      {features.map(i => <div key={i.title} className="max-w-xl p-6 border border-gray-200 rounded-lg shadow bg-gray-800 border-gray-700">
     <a href="#">
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{i.title}</h5>
+        <h5 class="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{i.title}</h5>
     </a>
     <img
-        className="aspect-[3/2] w-full rounded-2xl object-cover"
+        className="aspect-[5/2] w-full rounded-2xl object-cover"
         src={i.image}
         alt={i.title}
       />
-    <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">{i.description}</p>
+    <p className=" my-6 font-normal text-gray-700 dark:text-gray-400">{i.description}</p>
     <a target='_blank' rel='noreferrer' href={`services/${i.url}`} className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
         Read more
         <svg className="w-3.5 h-3.5 ml-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">

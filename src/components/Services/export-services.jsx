@@ -1,24 +1,21 @@
 import React from 'react'
+import { brokerageServices } from '../constants'
+
+const Heading = ({ children }) => <h1 className="text-lg font-semibold tracking-tight text-gray-300 sm:text-xl">{children}</h1>
 
 export default function ExportServices({ exportProducts }) {
   return (
     <>
   {/* <p className='text-black my-4 font-semibold text-lg'>Some of our imports</p> */}
-  <ul
-    role="list"
-    className="mx-auto mt-8 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:grid-cols-2 lg:mx-0 lg:max-w-4xl  lg:grid-cols-3"
-  >
+  
     
-   {exportProducts.map((prod) =>  <li key={prod?.name}>
-      <img
-        className="aspect-[3/2] w-full rounded-2xl object-cover"
-        src={prod.img}
-        alt={prod.name}
-      />
-      <h3 className="text-zinc-400 mt-6 text-lg font-semibold leading-8 tracking-tight">
-        {prod.name}
-      </h3>
-    </li>)}
-  </ul></>
+  <p className='my-4 text-md leading-7'>Navigating the ever-changing landscape of customs regulations, import/export documentation, and compliance requirements can be a daunting task. That`s where our Brokerage service at QIB Logistics steps in to make your life easier.</p>
+  <div>
+    {brokerageServices.map((prod) =>  <div className='my-6' key={prod.text}>
+    <Heading>{prod.text}</Heading>
+    <p className='my-1 text-md leading-6 text-gray-400'>{prod.description}</p></div>)}
+    </div>
+  
+  </>
   )
 }
